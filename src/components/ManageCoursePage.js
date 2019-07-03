@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CourseForm from './CourseForm';
 
 const ManageCoursePage = props => {
+    const [course, setCourse] = useState({
+        id: null,
+        slug: "",
+        title: "",
+        authorId: "",
+        category: ""
+    });
+
+    function handleChange(event) {
+        //Computed property
+        const updatedCourse = { ...course, [event.target.name]: event.target.value };
+        setCourse(updatedCourse);
+    }
+
     return (
         <div>
             <h2>Manage Course</h2>
-            <CourseForm/>
+            <CourseForm course={course} onChange={handleChange} />
         </div>
     );
 };
