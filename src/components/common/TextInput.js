@@ -16,6 +16,7 @@ function TextInput(props) {
           className="form-control"
           value={props.value}
           onChange={props.onChange}
+          onError={props.error}
         />
       </div>
       {props.error && <div className="alert alert-danger">{props.error}</div>}
