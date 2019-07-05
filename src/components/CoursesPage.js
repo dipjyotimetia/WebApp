@@ -1,24 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { getCourses } from '../api/courseApi';
-import CourseList from './CourseList';
+import { getCourses } from '../api/courseApi'
+import CourseList from './CourseList'
 
 function CoursesPage() {
-    const [courses, setCourses] = useState([]);
+  const [courses, setCourses] = useState([])
 
-    useEffect(() => {
-        getCourses().then(_courses => setCourses(_courses))
-    },[])
+  useEffect(() => {
+    getCourses().then(_courses => setCourses(_courses))
+  }, [])
 
-    return (
-        <div>
-            <h2>Courses</h2>
-            <Link className="btn btn-primary" to="/course">
-                AddCourse
-            </Link>
-            <CourseList courses={courses} />
-        </div>
-    ); 
+  return (
+    <div>
+      <h2>Courses</h2>
+      <Link className="btn btn-primary" to="/course">
+        AddCourse
+      </Link>
+      <CourseList courses={courses} />
+    </div>
+  )
 }
 
-export default CoursesPage;
+export default CoursesPage
