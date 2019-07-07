@@ -4,7 +4,7 @@ import rootReducer from './reducers'
 
 export default function configureStore(initialState) {
   const composeEnhancers =
-    window.__REDUX_DEVTOOLS_EXTENTION_COMPOSE__ || compose
+    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
   return createStore(
     rootReducer,
     initialState,
