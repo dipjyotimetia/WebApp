@@ -79,3 +79,7 @@
 - 🐶 Commit Hooks to prevent bad commits
 - ✅ Jest/Enzyme Testing
 - ⚡️ Production code optimization
+
+## Docker
+
+https://mherman.org/blog/dockerizing-a-react-app/
