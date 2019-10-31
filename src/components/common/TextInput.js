@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function TextInput(props) {
+const TextInput = props => {
   let wrapperClass = 'form-group'
   if (props.error.length > 0) {
     wrapperClass += ' has-error'

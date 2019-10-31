@@ -1,7 +1,7 @@
 import React from 'react'
 import TextInput from './common/TextInput'
 
-function CourseForm(props) {
+const CourseForm = props => {
   return (
     <form onSubmit={props.onSubmit}>
       <TextInput

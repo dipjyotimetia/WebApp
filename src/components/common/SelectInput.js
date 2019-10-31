@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function SelectInput(props) {
+const SelectInput = props => {
   return (
     <div className="form-group">
       <div className="filed">

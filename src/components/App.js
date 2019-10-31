@@ -9,7 +9,7 @@ import NotFoundPage from './NotFoundPage'
 import ManageCoursePage from './ManageCoursePage'
 import 'react-toastify/dist/ReactToastify.css'
 
-function App() {
+const App = () => {
   return (
     <div>
       <ToastContainer autoClose={3000} hideProgressBar />

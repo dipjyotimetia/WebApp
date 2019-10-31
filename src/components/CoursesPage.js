@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { getCourses } from '../api/courseApi'
 import CourseList from './CourseList'
 
-function CoursesPage() {
+const CoursesPage = () => {
   const [courses, setCourses] = useState([])
 
   useEffect(() => {
