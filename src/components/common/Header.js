@@ -9,11 +9,11 @@ function Header() {
       <NavLink activeStyle={activeStyle} exact to="/">
         Home
       </NavLink>
-      {'|'}
+      |
       <NavLink activeStyle={activeStyle} to="/courses">
         Courses
       </NavLink>
-      {'|'}
+      |
       <NavLink activeStyle={activeStyle} to="/about">
         About
       </NavLink>

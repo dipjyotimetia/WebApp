@@ -13,9 +13,9 @@ function SelectInput(props) {
           onChange={props.onChange}
           value={props.value}
         >
-          <option value="" />
+          <option value="0">Test</option>
           <option value="1">Cory House</option>
-          <option value="1">Scott Allen</option>
+          <option value="2">Scott Allen</option>
         </select>
       </div>
     </div>
