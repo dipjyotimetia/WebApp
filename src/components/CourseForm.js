@@ -1,9 +1,19 @@
 import React from 'react'
+import styled from 'styled-components'
 import TextInput from './common/TextInput'
 
+const Form = styled.form`
+  border-left-width: 0;
+  border-left-style: solid;
+  border-right-width: 20px;
+  padding-left: 10px;
+  padding-right: 700px;
+  width: max-content;
+}
+`
 const CourseForm = props => {
   return (
-    <form onSubmit={props.onSubmit}>
+    <Form onSubmit={props.onSubmit}>
       <TextInput
         id="title"
         label="title"
@@ -36,7 +46,7 @@ const CourseForm = props => {
         error={props.error}
       />
       <input type="submit" value="save" className="btn btn-primary" />
-    </form>
+    </Form>
   )
 }
 

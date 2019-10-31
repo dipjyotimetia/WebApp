@@ -1,10 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
+import styles from 'styled-components'
+
+const Table = styles.table`
+  margin: 0;
+  font-family: cursive;
+  font-size: medium;
+  font-weight: 400;
+  line-height: 1;
+  color: #222921;
+  text-align: left;
+  background-color: #fff;
+}`
 
 const CourseList = props => {
   return (
-    <table className="table">
+    <Table className="table">
       <thead>
         <tr>
           <th>Title</th>
@@ -25,7 +37,7 @@ const CourseList = props => {
           )
         })}
       </tbody>
-    </table>
+    </Table>
   )
 }
 
